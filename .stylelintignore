@@ -1,0 +1,4 @@
+# перечисление игнорируемых stylelint-ом файлов
+src/styles/main.scss
+src/styles/vendor/smart-grid.scss
+
