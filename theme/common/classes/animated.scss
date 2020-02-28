@@ -1,0 +1,47 @@
+.animated {
+	&.fadeIn {
+		@include animation(fade-in,cubic-bezier(0.6, -0.28, 0.735, 0.045), 1.2s,);
+	}
+
+	&.slideInTop {
+		@include animation(slide-in-top,cubic-bezier(0.25, 0.46, 0.45, 0.94), 1s, infinite);
+	}
+
+	&.lineAnimate {
+		@include animation(line-animate, cubic-bezier(0.25, 0.46, 0.45, 0.94), 5s, infinite);
+
+		stroke-dasharray: 600;
+		stroke-dashoffset: 600;
+	}
+
+	@for $i from 1 through 6 {
+		&.delay#{$i} { animation-delay: 1s * $i; }
+	}
+
+	@media print, (prefers-reduced-motion: reduce) {
+		transition-duration: 1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+	}
+
+	@keyframes slide-in-top {
+		0% {
+			opacity: 0;
+			transform: translateY(-20px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes fade-in {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+	@keyframes line-animate {
+		100% { stroke-dashoffset: 0; }
+	}
+}

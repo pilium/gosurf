@@ -237,6 +237,13 @@ input {
 	text-transform: none; // Уберём наследование text transform в Firefox
 }
 
+button {
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
 button,
 html [type="button"],
 [type="reset"],

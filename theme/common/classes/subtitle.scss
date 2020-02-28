@@ -1,0 +1,32 @@
+.subtitle {
+	position: relative;
+	display: inline-block;
+	padding-right: 104px;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 7.3333px;
+	text-transform: uppercase;
+	color: var(--color-light);
+	opacity: 0.5;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 88px;
+		height: 1px;
+		background-color: var(--color-bg-light);
+	}
+
+	&--left {
+		padding-right: 0;
+		padding-left: 104px;
+
+		&::before {
+			content: "";
+			left: 0;
+			right: auto;
+		}
+	}
+}

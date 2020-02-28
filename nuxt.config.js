@@ -31,9 +31,20 @@ module.exports = {
 		'@nuxtjs/axios',
 		'@nuxtjs/pwa',
 		'@nuxtjs/dotenv',
+		'@nuxtjs/svg-sprite',
+		'nuxt-webfontloader',
 	],
+	webfontloader: {
+		google: {
+			families: ['Fira+Sans:300,400,500,800&display=swap'],
+		},
+	},
 	axios: {},
-	// build: {
-	// 	extend(config, ctx) {},
-	// },
+	build: {
+		extend(config, {isClient}) {
+			if (isClient) {
+				config.devtool = 'eval-source-map';
+			}
+		},
+	},
 };
