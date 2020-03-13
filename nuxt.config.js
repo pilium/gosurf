@@ -36,7 +36,7 @@ module.exports = {
 	],
 	webfontloader: {
 		google: {
-			families: ['Fira+Sans:300,400,500,800&display=swap'],
+			families: ['Fira+Sans:100,300,400,500,900&display=swap'],
 		},
 	},
 	axios: {},

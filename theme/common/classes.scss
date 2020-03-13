@@ -9,6 +9,11 @@
 	.inner-wrapper { flex-grow: 1; }
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
 .db { display: block; }
 .dib { display: inline-block; }
 .ttu { text-transform: uppercase; }
@@ -32,7 +37,10 @@
 	justify-content: center;
 }
 
+.posr { position: relative; }
+
 .fw100 { font-weight: 100; }
+.fw300 { font-weight: 300; }
 .fw500 { font-weight: 500; }
 .fw900 { font-weight: 900; }
 
@@ -46,6 +54,26 @@
 
 @import "classes/subtitle.scss";
 @import "classes/animated.scss";
+
+.back-text {
+	font-weight: 900;
+	font-size: 200px;
+	line-height: 156px;
+	text-transform: uppercase;
+	opacity: 0.05;
+
+	&--absolute {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 5;
+		max-width: 464px;
+	}
+}
+
+section {
+	padding: 136px 0;
+}
 
 .page-enter-active,
 .page-leave-active { transition: opacity 0.2s; }
