@@ -1,22 +1,23 @@
 <template lang="pug">
-	div(v-swiper:mySwiper="swiperOption")
-		.swiper-wrapper.slider
-			p.back-text.back-text--absolute Go Surf
-			<BackImg/>
-			.swiper-slide.slide(v-for="slide, index in slideData" :style="{'background-image': 'url(' + require('~/assets/header_bg.jpg') + ')' }")
-				.slide__info.tar.ttu
-					.subtitle.subtitle--left.mb1 Surf
-					.slide__title.mb6.fw900 {{ slideData[index] }}
-					.subtitle.subtitle--left.mb1 Condition
-					.slide__text.mb2.fw900 Radical
-					nuxt-link.slide__link(to="/")
-						<svg-icon class="slide__arrow" name="arrow-right" title="Стрелка направо" width="24px" height="20px"/>
-		.slider__pagination.fl(slot="pagination")
-		.slider__navigation.fc
-			button.slider__prev.mr1(slot="button-prev" type="button")
-				<svg-icon class="slide__arrow" name="arrow-left" title="Стрелка направо" width="24px" height="20px"/>
-			button.slider__next(slot="button-next" type="button")
-				<svg-icon class="slide__arrow" name="arrow-right" title="Стрелка направо" width="24px" height="20px"/>
+	.banner-slider
+		div(v-swiper:mySwiper="swiperOption")
+			.swiper-wrapper.slider
+				p.back-text.back-text--absolute Go Surf
+				<BackImg/>
+				.swiper-slide.slide(v-for="slide, index in slideData" :key="index" :style="{'background-image': 'url(' + require('~/assets/header_bg.jpg') + ')' }")
+					.slide__info.tar.ttu
+						.subtitle.subtitle--left.mb1 Surf
+						.slide__title.mb6.fw900 {{ slideData[index] }}
+						.subtitle.subtitle--left.mb1 Condition
+						.slide__text.mb2.fw900 Radical
+						nuxt-link.slide__link(to="/")
+							<svg-icon class="slide__arrow" name="arrow-right" title="Стрелка направо" width="24px" height="20px"/>
+			.slider__pagination.fl(slot="pagination")
+			.slider__navigation.fc
+				button.slider__prev.mr1(slot="button-prev" type="button")
+					<svg-icon class="slide__arrow" name="arrow-left" title="Стрелка налево" width="24px" height="20px"/>
+				button.slider__next(slot="button-next" type="button")
+					<svg-icon class="slide__arrow" name="arrow-right" title="Стрелка направо" width="24px" height="20px"/>
 </template>
 
 <script>
@@ -73,9 +74,11 @@ export default {
 </script>
 
 <style lang="scss">
-	.swiper-container {
-		width: 100%;
-		height: 100vh;
+	.banner-slider {
+		.swiper-container {
+			width: 100%;
+			height: 100vh;
+		}
 
 		.swiper-pagination-bullets {
 			position: absolute;

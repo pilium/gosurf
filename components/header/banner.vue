@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import slider from '@/components/header/slider';
+import slider from '@/components/header/header-slider';
 
 export default {
 	components: {

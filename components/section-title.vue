@@ -3,16 +3,18 @@
 		.section-title__wrapper
 			span.back-text.dib {{ data.title }}
 			h3.section-title__text.ttu {{ data.title }}
-		.section-subtitle.dib.tar
-			.subtitle.subtitle--left Current Location
-			h4.section-subtitle__head.fw900 California
-				span.section-subtitle__separator.fw100 |
-				| USA
+		.section-subtitle.tar
+			<Location :options="locationData"/>
 </template>
 
 <script>
+import Location from '@/components/currentLocation';
+
 export default {
 	name: 'SectionTitle',
+	components: {
+		Location,
+	},
 	props: {
 		data: {
 			type: Object,
@@ -20,6 +22,18 @@ export default {
 				return {};
 			},
 		},
+	},
+	data() {
+		return {
+			locationData: {
+				subtitle: 'Current location',
+				head: {
+					state: 'California',
+					country: 'USA',
+				},
+				left: true,
+			},
+		};
 	},
 };
 </script>
@@ -54,12 +68,7 @@ export default {
 	}
 
 	.section-subtitle {
-		&__head {
-			font-size: 40px;
-		}
-
-		&__separator {
-			margin: 0 8px;
-		}
+		padding-right: 80px;
+		transform: translateY(-72px);
 	}
 </style>
