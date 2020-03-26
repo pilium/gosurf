@@ -52,6 +52,10 @@
 	.mr#{$i} { margin-right: 8px * $i; }
 }
 
+@for $i from 1 through 6 {
+	.pb#{$i} { padding-bottom: 8px * $i; }
+}
+
 @import "classes/subtitle.scss";
 @import "classes/animated.scss";
 
@@ -72,7 +76,10 @@
 }
 
 section {
-	padding: 136px 0;
+	padding: 216px 0;
+	background-position: right 200px;
+	background-size: auto;
+	background-repeat: no-repeat;
 }
 
 .page-enter-active,
