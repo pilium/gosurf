@@ -15,6 +15,14 @@ export default {
 		return {
 			titleData: {
 				title: 'Shop',
+				locationData: {
+					subtitle: 'Current location',
+					head: {
+						state: 'California',
+						country: 'USA',
+					},
+					left: true,
+				},
 			},
 		};
 	},

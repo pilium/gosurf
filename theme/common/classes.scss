@@ -75,11 +75,13 @@
 	}
 }
 
-section {
+.section {
 	padding: 216px 0;
 	background-position: right 200px;
 	background-size: auto;
 	background-repeat: no-repeat;
+
+	&--travel { background-position: bottom right; }
 }
 
 .page-enter-active,

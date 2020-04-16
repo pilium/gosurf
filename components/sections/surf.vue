@@ -18,6 +18,14 @@ export default {
 		return {
 			titleData: {
 				title: 'Surf',
+				locationData: {
+					subtitle: 'Current location',
+					head: {
+						state: 'California',
+						country: 'USA',
+					},
+					left: true,
+				},
 			},
 		};
 	},

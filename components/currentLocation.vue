@@ -4,6 +4,7 @@
 		h4.location__head.fw900 {{ options.head.state }}
 			span.location__separator.fw100 |
 			span {{ options.head.country }}
+			img.location__img(v-if="options.img" src="~assets/avialogo.svg")
 </template>
 
 <script>
@@ -26,6 +27,13 @@ export default {
 		margin: 8px 0;
 		font-size: 40px;
 	}
+
+	&__img {
+		margin-left: 16px;
+		width: 52px;
+		height: 46px;
+	}
+
 	&__separator { margin: 0 8px; }
 }
 </style>

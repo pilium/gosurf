@@ -56,9 +56,68 @@ export const state = () => ({
 			to: '/',
 		},
 	],
+	travelSlider: [
+		{
+			img: 'travel',
+			locationData: {
+				subtitle: 'Airline',
+				head: {
+					state: 'Virgin',
+					country: 'Australia',
+				},
+				left: false,
+				img: true,
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'travel',
+			locationData: {
+				subtitle: 'Airline1',
+				head: {
+					state: 'Virgin',
+					country: 'Australia',
+				},
+				left: false,
+				img: true,
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'travel',
+			locationData: {
+				subtitle: 'Airline2',
+				head: {
+					state: 'Virgin',
+					country: 'Australia',
+				},
+				left: false,
+				img: true,
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'travel',
+			locationData: {
+				subtitle: 'Airline3',
+				head: {
+					state: 'Virgin',
+					country: 'Australia',
+				},
+				left: false,
+				img: true,
+			},
+			plane: 'virgin',
+
+		},
+	],
 });
 
 export const getters = {
 	getSliderData: (state) => state.slidesData,
 	getSurfSliderData: (state) => state.surfSlider,
+	getTravelSliderData: (state) => state.travelSlider,
 };

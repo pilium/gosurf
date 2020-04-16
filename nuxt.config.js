@@ -4,6 +4,9 @@ const shrinkRay = require('shrink-ray-current');
 const isDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
+	server: {
+		port: 1111,
+	},
 	router: {
 		base: '/',
 		prefetchLinks: false,
@@ -32,7 +35,7 @@ module.exports = {
 	css: [
 		{src: '@/theme/variables.scss', lang: 'scss'},
 		{src: '@/theme/index.scss', lang: 'scss'},
-		'swiper/dist/css/swiper.css',
+		'swiper/css/swiper.css',
 	],
 	plugins: [{src: '@/plugins/slider.js', mode: 'client'}],
 	buildModules: [

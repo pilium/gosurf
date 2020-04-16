@@ -4,7 +4,7 @@
 			span.back-text.dib {{ data.title }}
 			h3.section-title__text.ttu {{ data.title }}
 		.section-subtitle.tar
-			<Location :options="locationData"/>
+			<Location :options="data.locationData"/>
 </template>
 
 <script>
@@ -22,18 +22,6 @@ export default {
 				return {};
 			},
 		},
-	},
-	data() {
-		return {
-			locationData: {
-				subtitle: 'Current location',
-				head: {
-					state: 'California',
-					country: 'USA',
-				},
-				left: true,
-			},
-		};
 	},
 };
 </script>
@@ -67,8 +55,5 @@ export default {
 		}
 	}
 
-	.section-subtitle {
-		padding-right: 80px;
-		transform: translateY(-72px);
-	}
+	.section-subtitle { padding-right: 80px; }
 </style>
