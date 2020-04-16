@@ -226,7 +226,7 @@ module.exports = {
 			}
 		],
 		'line-comment-position': 'off',
-		'linebreak-style': ['error', 'unix'],
+		'linebreak-style': ['error', 'windows'],
 		'lines-around-comment': 'off',
 		'lines-around-directive': [
 			'error',
