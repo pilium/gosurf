@@ -57,7 +57,7 @@ export default {
 					minutes: '5 Minutes',
 				},
 				price: '$1,976 USD',
-
+				priceTitle: 'Round Trip',
 			},
 		};
 	},

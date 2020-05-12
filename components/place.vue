@@ -12,7 +12,7 @@
 		.place__info-item
 			.place__info-subtitle.tar {{info.title.fourth}}
 			.place__info-title.fw900 {{info.price}}
-				span.fw300 Round Trip
+				span.fw300 {{info.priceTitle}}
 </template>
 
 <script>

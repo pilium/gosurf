@@ -44,20 +44,20 @@ export default {
 			},
 			place: {
 				title: {
-					first: 'Destination',
-					second: 'Distance',
-					thirs: 'Travel Time',
+					first: 'Resort',
+					second: '# of Nights',
+					third: '# of Guests',
 					fourth: 'Pricing',
 				},
-				city: 'Queensland',
+				city: 'Auberge',
 				country: 'Australia',
-				distance: '7,065 Miles',
+				distance: '5 Nights',
 				time: {
-					hours: '23 Hours',
-					minutes: '5 Minutes',
+					hours: '4 Guests',
+					minutes: '',
 				},
-				price: '$1,976 USD',
-
+				price: '$349 USD',
+				priceTitle: 'Per Night',
 			},
 		};
 	},
