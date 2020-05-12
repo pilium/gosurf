@@ -66,7 +66,7 @@ export const state = () => ({
 					country: 'Australia',
 				},
 				left: false,
-				img: true,
+				img: 'avialogo',
 			},
 			plane: 'virgin',
 
@@ -80,7 +80,7 @@ export const state = () => ({
 					country: 'Australia',
 				},
 				left: false,
-				img: true,
+				img: 'avialogo',
 			},
 			plane: 'virgin',
 
@@ -94,7 +94,7 @@ export const state = () => ({
 					country: 'Australia',
 				},
 				left: false,
-				img: true,
+				img: 'avialogo',
 			},
 			plane: 'virgin',
 
@@ -108,7 +108,65 @@ export const state = () => ({
 					country: 'Australia',
 				},
 				left: false,
-				img: true,
+				img: 'avialogo',
+			},
+			plane: 'virgin',
+
+		},
+	],
+	sleepSlider: [
+		{
+			img: 'sleep',
+			locationData: {
+				subtitle: 'Rating',
+				head: {
+					state: 'Excellent',
+					country: '',
+				},
+				left: false,
+				img: 'stars',
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'sleep',
+			locationData: {
+				subtitle: 'Rating',
+				head: {
+					state: 'Excellent',
+					country: '',
+				},
+				left: false,
+				img: 'stars',
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'sleep',
+			locationData: {
+				subtitle: 'Rating',
+				head: {
+					state: 'Excellent',
+					country: '',
+				},
+				left: false,
+				img: 'stars',
+			},
+			plane: 'virgin',
+
+		},
+		{
+			img: 'sleep',
+			locationData: {
+				subtitle: 'Rating',
+				head: {
+					state: 'Excellent',
+					country: '',
+				},
+				left: false,
+				img: 'stars',
 			},
 			plane: 'virgin',
 
@@ -120,4 +178,5 @@ export const getters = {
 	getSliderData: (state) => state.slidesData,
 	getSurfSliderData: (state) => state.surfSlider,
 	getTravelSliderData: (state) => state.travelSlider,
+	getSleepSliderData: (state) => state.sleepSlider,
 };

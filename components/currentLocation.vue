@@ -4,7 +4,7 @@
 		h4.location__head.fw900 {{ options.head.state }}
 			span.location__separator.fw100 |
 			span {{ options.head.country }}
-			img.location__img(v-if="options.img" src="~assets/avialogo.svg")
+			//- img.location__img(:src="~assets/ + {{options.img}}")
 </template>
 
 <script>
