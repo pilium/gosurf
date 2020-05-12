@@ -40,7 +40,7 @@ export default {
 			},
 			btnData: {
 				first: 'book',
-				last: 'flight',
+				last: 'stay',
 			},
 			place: {
 				title: {
